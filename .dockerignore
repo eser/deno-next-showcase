@@ -1,0 +1,11 @@
+.git/*
+.github/*
+.next/*
+.vscode/*
+.cursorrules
+.editorconfig
+.gitattributes
+.gitignore
+Dockerfile
+LICENSE
+README.md

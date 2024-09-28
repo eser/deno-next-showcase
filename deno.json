@@ -1,0 +1,22 @@
+{
+  "lock": false,
+  "nodeModulesDir": "manual",
+  "unstable": [
+    "cron",
+    "temporal"
+  ],
+  "exclude": [
+    "**/node_modules/*",
+    "**/.next/*"
+  ],
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
+}

@@ -1,0 +1,17 @@
+# general coding rules
+
+if all members of a type definition are methods, use types instead of interfaces.
+
+always use props objects and never destructure them in function bodies. especially in React components, don't destructure component props in the parameter list.
+
+# html and css rules
+
+for html and css: instead of bare tailwind classes, use existing components from the radix-themes library.
+
+# react rules
+
+for react: use server actions and server-side rendering as much as possible.
+for react: use React 19's `use(resource)` api to load data on the server.
+for react: use React 19's `useOptimistic(state, updateFn)` api when there is a loading state before the server action is executed.
+
+for react: use signals for reactive data.
