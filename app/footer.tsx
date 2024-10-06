@@ -85,6 +85,19 @@ export function Footer() {
           useOptimistic()
         </Link>
         <Link
+          href="/ppr/"
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+        >
+          <Image
+            aria-hidden
+            src="/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          Partial Prerendering
+        </Link>
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://github.com/eser/deno-next-showcase"
           target="_blank"
