@@ -86,7 +86,7 @@ export function Footer() {
         </Link>
         <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://github.com/eser/next-showcase"
+          href="https://github.com/eser/deno-next-showcase"
           target="_blank"
           rel="noopener noreferrer"
         >
