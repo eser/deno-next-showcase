@@ -2,21 +2,31 @@ FROM denoland/deno:2.0.0-rc.10 AS base
 
 # Rebuild the source code only when needed
 FROM base AS builder
-WORKDIR /app
-COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DENO_DIR=./.deno_cache
+
+WORKDIR /app
+
+# Copy package.json and lockfile
+COPY package.json deno.lock ./
+
+# Install dependencies
+RUN deno install
+
+# Copy the rest of the application
+COPY . ./
 
 RUN deno run -A build
 
 # Production image, copy all the files and run next
 FROM base AS runner
-WORKDIR /app
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV DENO_DIR=./.deno_cache
+
+WORKDIR /app
 
 # Set the correct permission for prerender cache
 RUN mkdir .next

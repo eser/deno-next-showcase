@@ -2,6 +2,7 @@
 .github/*
 .next/*
 .vscode/*
+node_modules/*
 .cursorrules
 .editorconfig
 .gitattributes
