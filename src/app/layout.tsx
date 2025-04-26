@@ -7,7 +7,7 @@ import "./globals.css";
 
 import { Footer } from "./footer.tsx";
 
-const fontHeading = Bree_Serif({
+const fontBreeSerif = Bree_Serif({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
@@ -16,7 +16,7 @@ const fontHeading = Bree_Serif({
   preload: true,
 });
 
-const fontSans = Roboto({
+const fontRoboto = Roboto({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -25,7 +25,7 @@ const fontSans = Roboto({
   preload: true,
 });
 
-const fontMono = Roboto_Mono({
+const fontRobotoMono = Roboto_Mono({
   weight: ["400", "700"],
   style: ["normal"],
   subsets: ["latin"],
@@ -39,18 +39,18 @@ export const metadata: Metadata = {
   description: "Playground app for Deno 2, Next.js 15 and React 19 features",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type RootLayoutProps = {
   children: React.ReactNode;
-}>) {
+};
+
+export default function RootLayout(props: Readonly<RootLayoutProps>) {
   return (
-    <html lang="en" className={`${fontHeading.variable} ${fontSans.variable} ${fontMono.variable}`}>
+    <html lang="en" className={`${fontBreeSerif.variable} ${fontRoboto.variable} ${fontRobotoMono.variable}`}>
       <body>
         <Theme accentColor="orange" grayColor="slate" radius="medium" scaling="110%" asChild>
           <Flex direction="column">
             <Box asChild>
-              {children}
+              {props.children}
             </Box>
             <Box asChild>
               <Footer />

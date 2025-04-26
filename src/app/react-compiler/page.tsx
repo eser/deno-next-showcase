@@ -6,14 +6,14 @@ import { Box, Button, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 function CalculateComplex() {
   const data = Date.now();
 
-  return <Text as="div" suppressHydrationWarning={true}>{data}</Text>;
+  return <Text as="div" suppressHydrationWarning>{data}</Text>;
 }
 
 function CalculateComplexNoMemo() {
   "use no memo";
   const data = Date.now();
 
-  return <Text as="div" suppressHydrationWarning={true}>{data}</Text>;
+  return <Text as="div" suppressHydrationWarning>{data}</Text>;
 }
 
 export default function Page() {

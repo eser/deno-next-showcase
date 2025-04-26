@@ -49,7 +49,7 @@ export default function Page() {
                 <div>
                   {optimisticState.map(
                     (entry: [Date, string, boolean?], _index: number) => (
-                      <Text as="div">
+                      <Text as="div" key={entry[0].toISOString()}>
                         {/* time */}
                         <Kbd>{formatDate(entry[0])}</Kbd>
                         {/* message */}
@@ -65,7 +65,7 @@ export default function Page() {
                   )}
                 </div>
 
-                <TextField.Root type="text" name="message" placeholder="Message" required={true} size="3" />
+                <TextField.Root type="text" name="message" placeholder="Message" size="3" required />
 
                 <Button type="submit" disabled={isPending} variant="soft" size="3">
                   {isPending && <Spinner />}
