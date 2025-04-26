@@ -27,6 +27,11 @@ Thumbs.db
 *.so
 *.dylib
 
+# Test binaries, coverage and testing tool outputs
+*.test
+*.out
+cov_profile.lcov
+
 # Next.js build cache
 /.next/
 .vercel

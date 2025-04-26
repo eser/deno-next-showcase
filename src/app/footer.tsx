@@ -12,7 +12,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/file-text.svg"
+            src="/assets/file-text.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -25,7 +25,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -38,7 +38,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -51,7 +51,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -64,7 +64,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -77,7 +77,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -90,7 +90,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="/assets/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -105,7 +105,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="/assets/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
@@ -120,7 +120,7 @@ export function Footer() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="/assets/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}

@@ -4,9 +4,12 @@
 .vscode/*
 node_modules/*
 .cursorrules
+.dockerignore
 .editorconfig
 .gitattributes
 .gitignore
+.pre-commit-config.yaml
+.tool-versions
 Dockerfile
 LICENSE
 README.md

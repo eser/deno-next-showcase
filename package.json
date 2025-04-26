@@ -2,6 +2,7 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,8 +14,8 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@radix-ui/themes": "^3.2.1",
     "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/themes": "^3.2.1",
     "@tailwindcss/postcss": "^4.1.4",
     "@types/node": "^22.15.2",
     "@types/react-dom": "^19.1.2",

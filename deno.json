@@ -1,6 +1,6 @@
 {
   "lock": true,
-  "nodeModulesDir": "manual",
+  "nodeModulesDir": "auto",
   "unstable": [
     "cron",
     "temporal"
@@ -18,5 +18,8 @@
   },
   "fmt": {
     "lineWidth": 120
+  },
+  "tasks": {
+    "ok": "echo 'ok'"
   }
 }

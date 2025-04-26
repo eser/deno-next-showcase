@@ -1,28 +1,45 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowImportingTsExtensions": true,
-    "allowJs": true,
-    "skipLibCheck": true,
+    // Type Checking
     "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Modules
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
+    "allowImportingTsExtensions": true, // Required for --noEmit with tsc --build
+
+    // Emit
+    "noEmit": true, // Let Next.js handle transpilation
+
+    // Language and Environment
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "preserve", // Next.js handles JSX transform
+
+    // Interop Constraints
+    "esModuleInterop": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "allowJs": true,
+
+    // Completeness
+    "skipLibCheck": true,
+
+    // Project Structure
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "incremental": true, // Enable incremental compilation
+
+    // Plugins
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

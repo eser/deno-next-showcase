@@ -1,6 +1,6 @@
 # See https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
 
-name: Fly.io Deployment
+name: Deployment Pipeline
 
 on:
   push:
@@ -18,7 +18,7 @@ on:
         type: boolean
 
 concurrency:
-  group: fly-deploy
+  group: ${{ github.ref }}-deploy
   cancel-in-progress: true
 
 jobs:
