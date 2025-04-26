@@ -24,9 +24,16 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
+  runtime: "nodejs",
   matcher: [
-    // Skip all internal paths (_next)
-    "/((?!_next).*)",
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    "/((?!_next/|favicon.ico).*)",
     // Optional: only run on root (/) URL
     // '/'
   ],

@@ -9,9 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.3.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "next": "^15.4.0-canary.10"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.7.0",
@@ -30,6 +28,8 @@
     "negotiator": "^1.0.0",
     "picomatch": "^4.0.2",
     "postcss": "^8.5.3",
+    "react-dom": "^19.1.0",
+    "react": "^19.1.0",
     "tailwind-merge": "^3.2.0",
     "tailwindcss": "^4.1.4",
     "tw-animate-css": "^1.2.8",

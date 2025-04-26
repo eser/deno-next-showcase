@@ -7,7 +7,7 @@ app = "deno-next-showcase"
 
 [build]
 build-target = "runner"
-dockerfile = "Dockerfile"
+dockerfile = "../docker/Dockerfile"
 
   [build.args]
   MODE = "production"
