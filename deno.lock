@@ -1,6 +1,9 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@std/assert@*": "1.0.11",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "npm:@faker-js/faker@^9.7.0": "9.7.0",
     "npm:@radix-ui/react-slot@^1.2.0": "1.2.0_@types+react@19.1.2_react@19.1.0",
     "npm:@radix-ui/themes@^3.2.1": "3.2.1_@types+react@19.1.2_@types+react-dom@19.1.2__@types+react@19.1.2_react@19.1.0_react-dom@19.1.0__react@19.1.0",
     "npm:@tailwindcss/postcss@^4.1.4": "4.1.4",
@@ -11,7 +14,9 @@
     "npm:class-variance-authority@~0.7.1": "0.7.1",
     "npm:clsx@^2.1.1": "2.1.1",
     "npm:lucide-react@0.503": "0.503.0_react@19.1.0",
+    "npm:negotiator@1": "1.0.0",
     "npm:next@15.3.1": "15.3.1_react@19.1.0_react-dom@19.1.0__react@19.1.0_babel-plugin-react-compiler@19.1.0-rc.1",
+    "npm:picomatch@^4.0.2": "4.0.2",
     "npm:postcss@^8.5.3": "8.5.3",
     "npm:react-dom@^19.1.0": "19.1.0_react@19.1.0",
     "npm:react@^19.1.0": "19.1.0",
@@ -20,6 +25,17 @@
     "npm:tailwindcss@^4.1.4": "4.1.4",
     "npm:tw-animate-css@^1.2.8": "1.2.8",
     "npm:typescript@^5.8.3": "5.8.3"
+  },
+  "jsr": {
+    "@std/assert@1.0.11": {
+      "integrity": "2461ef3c368fe88bc60e186e7744a93112f16fd110022e113a0849e94d1c83c1",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -238,6 +254,9 @@
       "dependencies": [
         "tslib"
       ]
+    },
+    "@faker-js/faker@9.7.0": {
+      "integrity": "sha512-aozo5vqjCmDoXLNUJarFZx2IN/GgGaogY4TMJ6so/WLZOWpSV7fvj2dmrV6sEAnUm1O7aCrhTibjpzeDFgNqbg=="
     },
     "@floating-ui/core@1.6.9": {
       "integrity": "sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==",
@@ -1835,7 +1854,7 @@
       "integrity": "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==",
       "dependencies": [
         "braces",
-        "picomatch"
+        "picomatch@2.3.1"
       ]
     },
     "mimic-fn@2.1.0": {
@@ -1861,6 +1880,9 @@
     },
     "nanoid@3.3.11": {
       "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w=="
+    },
+    "negotiator@1.0.0": {
+      "integrity": "sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg=="
     },
     "next@15.3.1_react@19.1.0_react-dom@19.1.0__react@19.1.0": {
       "integrity": "sha512-8+dDV0xNLOgHlyBxP1GwHGVaNXsmp+2NhZEYrXr24GWLHtt27YrBPbPuHvzlhi7kZNYjeJNR93IF5zfFu5UL0g==",
@@ -1987,6 +2009,9 @@
     },
     "picomatch@2.3.1": {
       "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="
+    },
+    "picomatch@4.0.2": {
+      "integrity": "sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg=="
     },
     "postcss@8.4.31": {
       "integrity": "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==",
@@ -2398,6 +2423,7 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@faker-js/faker@^9.7.0",
         "npm:@radix-ui/react-slot@^1.2.0",
         "npm:@radix-ui/themes@^3.2.1",
         "npm:@tailwindcss/postcss@^4.1.4",
@@ -2408,7 +2434,9 @@
         "npm:class-variance-authority@~0.7.1",
         "npm:clsx@^2.1.1",
         "npm:lucide-react@0.503",
+        "npm:negotiator@1",
         "npm:next@15.3.1",
+        "npm:picomatch@^4.0.2",
         "npm:postcss@^8.5.3",
         "npm:react-dom@^19.1.0",
         "npm:react@^19.1.0",
