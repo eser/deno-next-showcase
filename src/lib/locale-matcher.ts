@@ -1,10 +1,10 @@
 import Negotiator from "negotiator";
-import picoMatch from "picomatch";
+import picoMatch from "picomatch/posix.js";
 
 export function localeMatchFromRequest(req: Request, supportedLocales: string[], defaultLocale: string) {
   const negotiatorRequest = {
     headers: {
-      "accept-language": req.headers.get("accept-language"),
+      "accept-language": req.headers.get("accept-language") ?? undefined,
     },
   };
 
