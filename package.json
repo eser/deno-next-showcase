@@ -8,20 +8,25 @@
     "start": "next start"
   },
   "dependencies": {
-    "@radix-ui/themes": "^3.1.4",
-    "babel-plugin-react-compiler": "^0.0.0-experimental-b12479e-20240926",
-    "fluid-tailwind": "^1.0.3",
-    "next": "15.0.0-rc.0",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "next": "15.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4",
-    "@types/react": "18.3.10",
-    "postcss": "^8.4.47",
-    "postcss-import": "^16.1.0",
-    "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "@radix-ui/themes": "^3.2.1",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/node": "^22.15.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/react": "^19.1.2",
+    "babel-plugin-react-compiler": "^19.1.0-rc.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.503.0",
+    "postcss": "^8.5.3",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.4",
+    "tw-animate-css": "^1.2.8",
+    "typescript": "^5.8.3"
+  }
 }

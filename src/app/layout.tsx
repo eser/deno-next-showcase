@@ -11,7 +11,7 @@ const fontHeading = Bree_Serif({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-bree-serif",
   display: "swap",
   preload: true,
 });
@@ -20,7 +20,7 @@ const fontSans = Roboto({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-roboto",
   display: "swap",
   preload: true,
 });
@@ -29,7 +29,7 @@ const fontMono = Roboto_Mono({
   weight: ["400", "700"],
   style: ["normal"],
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-roboto-mono",
   display: "swap",
   preload: true,
 });
